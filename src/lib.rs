@@ -693,8 +693,8 @@ impl Turso {
     /// Enable the platform's optimized I/O implementation for local databases.
     /// Linux uses io_uring when available and falls back to the platform I/O
     /// implementation if io_uring cannot be initialized.
-    pub fn optimize_io(mut self, on: bool) -> Self {
-        self.options.local_options.optimize_io = on;
+    pub fn optimize_io(mut self) -> Self {
+        self.options.local_options.optimize_io = true;
         self
     }
 
