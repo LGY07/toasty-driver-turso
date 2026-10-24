@@ -1,8 +1,0 @@
-error[E0599]: no method named `nonexistent` found for struct `UserFields<__Origin, __Target>` in the current scope
-  --> tests/ui/query_macro_invalid_field.rs:11:41
-   |
- 2 | struct User {
-   |        ---- method `nonexistent` not found for this struct
-...
-11 |     let _ = toasty::query!(User filter .nonexistent == "Alice");
-   |                                         ^^^^^^^^^^^ method not found in `UserFields<User>`
